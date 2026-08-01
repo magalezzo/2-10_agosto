@@ -1,19 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Menu Familiar 10dias",
+  "schemaVersion": 1,
+  "description": "Menú familiar 9 días (2–10 ago 2026) con ideas de Notion, precios reales del catálogo, comidas editables, lista de compras con filtros y presupuesto por tienda"
+}
+</script>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Menú Familiar</title>
-
-<!-- Ícono y ajustes para "Agregar a pantalla de inicio" en iPhone -->
-<!-- Coloca un archivo llamado icon.jpg en la MISMA carpeta que este HTML -->
-<link rel="apple-touch-icon" href="icon.jpg">
-<link rel="icon" type="image/jpeg" href="icon.jpg">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Menú Familiar">
-<meta name="theme-color" content="#1b5e3b">
 <style>
 :root{color-scheme:light;}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
@@ -117,166 +113,241 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#f3f4f6;color:#1f293
 <body>
 
 <div class="hdr">
-  <h1>🍽️ Menú Familiar — 6 días</h1>
-  <p>Domingo 26 Jul – Viernes 31 Jul 2026 · Mamá + 👧 Niña 5 años + 🧑 Adolescente 15 años</p>
+  <h1>🍽️ Menú Familiar — 9 días</h1>
+  <p>Domingo 2 Ago – Lunes 10 Ago 2026 · Mamá + 👧 Niña 5 años + 🧑 Adolescente 15 años</p>
   <div class="lgnd">
     <div class="lgnd-i"><div class="dot" style="background:#6c63ff"></div>Zapatoca</div>
     <div class="lgnd-i"><div class="dot" style="background:#e76f51"></div>D1/Ara</div>
     <div class="lgnd-i">✏️ Toca la comida para editarla</div>
-    <div class="lgnd-i"><span style="color:#7c3aed;font-weight:800">N</span> de Notion (semana anterior)</div>
+    <div class="lgnd-i"><span style="color:#7c3aed;font-weight:800">N</span> idea de Notion</div>
   </div>
 </div>
 
 <!-- ════ MENÚ ════ -->
 <div class="sec on" id="s-menu">
 
-<!-- DÍA 26 -->
+<!-- DÍA 2 -->
 <div class="day">
-  <div class="dhdr">🔵 Domingo <span class="ddate">26 Jul</span></div>
+  <div class="dhdr">🔵 Domingo <span class="ddate">2 Ago</span></div>
   <div class="meal">
-    <div class="mtitle">☀️ Desayuno</div>
-    <div class="mname" contenteditable="true" data-id="d26-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pandebono + Huevo revuelto + Chocolate caliente</div>
-    <div class="pors"><span>👧 2 pandebonos · 1 huevo · ½ taza chocolate</span><span>🧑 3 pandebonos · 2 huevos · 1 taza chocolate</span></div>
-  </div>
-  <div class="meal">
-    <div class="mtitle">🍊 Media mañana</div>
-    <div class="mname" contenteditable="true" data-id="d26-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Papaya + Leche entera + Pan de queso pequeño</div>
-    <div class="pors"><span>👧 ½ taza papaya · 150 ml leche · 1 pan de queso</span><span>🧑 1 taza papaya · 200 ml leche · 2 panes de queso</span></div>
-  </div>
-  <div class="meal">
-    <div class="mtitle">🍱 Almuerzo</div>
-    <div class="mname" contenteditable="true" data-id="d26-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Chuleta de cerdo a la plancha + Papa cocida + Habichuela</div>
-    <div class="pors"><span>👧 70 g chuleta · ½ taza papa · ½ taza habichuela</span><span>🧑 140 g chuleta · 1 taza papa · 1 taza habichuela</span></div>
-  </div>
-  <div class="meal">
-    <div class="mtitle">🌙 Cena</div>
-    <div class="mname" contenteditable="true" data-id="d26-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Torta de plátano maduro con queso + Huevo cocido</div>
-    <div class="pors"><span>👧 1 tajada torta · 1 huevo</span><span>🧑 2 tajadas torta · 1 huevo</span></div>
-  </div>
-</div>
-
-<!-- DÍA 27 -->
-<div class="day">
-  <div class="dhdr">🟢 Lunes <span class="ddate">27 Jul</span></div>
-  <div class="meal">
-    <div class="mtitle">☀️ Desayuno</div>
-    <div class="mname" contenteditable="true" data-id="d27-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Granola con leche y fresas + Huevo cocido</div>
-    <div class="pors"><span>👧 ½ taza granola · 150 ml leche · 1 huevo</span><span>🧑 1 taza granola · 200 ml leche · 2 huevos</span></div>
-  </div>
-  <div class="meal">
-    <div class="mtitle">🍊 Media mañana</div>
-    <div class="mname" contenteditable="true" data-id="d27-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Mandarina + Yogur líquido + Croissant pequeño</div>
-    <div class="pors"><span>👧 1 mandarina · 150 ml yogur líquido · 1 croissant</span><span>🧑 2 mandarinas · 200 ml yogur líquido · 1 croissant</span></div>
-  </div>
-  <div class="meal">
-    <div class="mtitle">🍱 Almuerzo</div>
-    <div class="mname" contenteditable="true" data-id="d27-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Carne molida en salsa + Yuca cocida + Arveja</div>
-    <div class="pors"><span>👧 80 g carne · ½ taza yuca · ½ taza arveja</span><span>🧑 160 g carne · 1 taza yuca · 1 taza arveja</span></div>
-  </div>
-  <div class="meal">
-    <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
-    <div class="mname" contenteditable="true" data-id="d27-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Albóndigas de pollo en salsa con pasta</div>
-    <div class="pors"><span>👧 4 albóndigas · ½ taza pasta</span><span>🧑 7 albóndigas · 1 taza pasta</span></div>
-  </div>
-</div>
-
-<!-- DÍA 28 -->
-<div class="day">
-  <div class="dhdr">🟢 Martes <span class="ddate">28 Jul</span></div>
-  <div class="meal">
-    <div class="mtitle">☀️ Desayuno</div>
-    <div class="mname" contenteditable="true" data-id="d28-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Arepa de chócolo + Huevo frito + Jugo de mandarina</div>
-    <div class="pors"><span>👧 1 arepa · 1 huevo · ½ vaso jugo</span><span>🧑 2 arepas · 2 huevos · 1 vaso jugo</span></div>
+    <div class="mtitle">☀️ Desayuno <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d02-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Arepa de maíz con queso + Huevo revuelto + Chocolate caliente</div>
+    <div class="pors"><span>👧 1 arepa · 1 huevo · ½ taza chocolate</span><span>🧑 2 arepas · 2 huevos · 1 taza chocolate</span></div>
   </div>
   <div class="meal">
     <div class="mtitle">🍊 Media mañana <span class="nbadge">N</span></div>
-    <div class="mname" contenteditable="true" data-id="d28-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pera + Leche achocolatada + Galletas de arroz</div>
-    <div class="pors"><span>👧 1 pera pequeña · 150 ml leche choco · 4 galletas</span><span>🧑 1 pera · 250 ml leche choco · 6 galletas</span></div>
+    <div class="mname" contenteditable="true" data-id="d02-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Manzana + Kumis + Galletas de arroz</div>
+    <div class="pors"><span>👧 1 manzana pequeña · 150 ml kumis · 4 galletas</span><span>🧑 1 manzana · 200 ml kumis · 6 galletas</span></div>
   </div>
   <div class="meal">
-    <div class="mtitle">🍱 Almuerzo</div>
-    <div class="mname" contenteditable="true" data-id="d28-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Lentejas guisadas con chorizo + Arroz blanco + Zanahoria</div>
-    <div class="pors"><span>👧 ½ taza lentejas · ½ taza arroz · ½ taza zanahoria</span><span>🧑 1 taza lentejas · 1 taza arroz · 1 taza zanahoria</span></div>
+    <div class="mtitle">🍱 Almuerzo <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d02-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pollo miel mostaza + Arroz blanco + Zanahoria</div>
+    <div class="pors"><span>👧 80 g pollo · ½ taza arroz · ½ taza zanahoria</span><span>🧑 150 g pollo · 1 taza arroz · 1 taza zanahoria</span></div>
   </div>
   <div class="meal">
     <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
-    <div class="mname" contenteditable="true" data-id="d28-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pizza casera individual + Ensalada de remolacha</div>
+    <div class="mname" contenteditable="true" data-id="d02-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pasta pesto con pollo desmechado</div>
+    <div class="pors"><span>👧 ½ taza pasta · 1 cda pesto</span><span>🧑 1 taza pasta · 2 cdas pesto</span></div>
+  </div>
+</div>
+
+<!-- DÍA 3 -->
+<div class="day">
+  <div class="dhdr">🟢 Lunes <span class="ddate">3 Ago</span></div>
+  <div class="meal">
+    <div class="mtitle">☀️ Desayuno <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d03-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Avena cocida en hojuelas con banano y canela + Tostada</div>
+    <div class="pors"><span>👧 ½ taza avena · ½ banano · 1 tostada</span><span>🧑 1 taza avena · 1 banano · 2 tostadas</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍊 Media mañana <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d03-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Banano + Leche achocolatada (Milo) + Pan de banano</div>
+    <div class="pors"><span>👧 1 banano · 150 ml leche choco · 1 tajada pan de banano</span><span>🧑 1 banano · 200 ml leche choco · 2 tajadas pan de banano</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍱 Almuerzo <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d03-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Albóndigas de carne en salsa + Puré de papa + Brócoli</div>
+    <div class="pors"><span>👧 4 albóndigas · ½ taza puré · ½ taza brócoli</span><span>🧑 7 albóndigas · 1 taza puré · 1 taza brócoli</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d03-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Quesadilla de pollo con guacamole</div>
+    <div class="pors"><span>👧 1 quesadilla pequeña · 2 cdas guacamole</span><span>🧑 2 quesadillas · 4 cdas guacamole</span></div>
+  </div>
+</div>
+
+<!-- DÍA 4 -->
+<div class="day">
+  <div class="dhdr">🟢 Martes <span class="ddate">4 Ago</span></div>
+  <div class="meal">
+    <div class="mtitle">☀️ Desayuno <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d04-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Crepes de queso + Uvas + Jugo de naranja</div>
+    <div class="pors"><span>👧 2 crepes · ½ taza uvas · ½ vaso jugo</span><span>🧑 3 crepes · 1 taza uvas · 1 vaso jugo</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍊 Media mañana <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d04-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Uvas + Yogur líquido de fresa + Croissant mini</div>
+    <div class="pors"><span>👧 ½ taza uvas · 150 ml yogur · 1 croissant mini</span><span>🧑 1 taza uvas · 200 ml yogur · 2 croissants mini</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍱 Almuerzo <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d04-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pechuga rellena de espinaca y queso + Papa criolla + Habichuela</div>
+    <div class="pors"><span>👧 70 g pechuga rellena · ½ taza papa criolla · ½ taza habichuela</span><span>🧑 140 g pechuga rellena · 1 taza papa criolla · 1 taza habichuela</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d04-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Espaguetis cremoso con tocineta (porción ligera)</div>
+    <div class="pors"><span>👧 ½ taza espaguetis</span><span>🧑 1 taza espaguetis</span></div>
+  </div>
+</div>
+
+<!-- DÍA 5 -->
+<div class="day">
+  <div class="dhdr">🟢 Miércoles <span class="ddate">5 Ago</span></div>
+  <div class="meal">
+    <div class="mtitle">☀️ Desayuno <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d05-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Tostadas francesas con pera + Jugo de mandarina</div>
+    <div class="pors"><span>👧 2 tostadas francesas · ½ pera · ½ vaso jugo</span><span>🧑 3 tostadas francesas · 1 pera · 1 vaso jugo</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍊 Media mañana <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d05-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pera + Leche entera + Rollitos de canela</div>
+    <div class="pors"><span>👧 1 pera pequeña · 150 ml leche · 1 rollito</span><span>🧑 1 pera · 200 ml leche · 2 rollitos</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍱 Almuerzo <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d05-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Nuggets de pollo caseros + Arroz de coco + Arveja y zanahoria</div>
+    <div class="pors"><span>👧 6 nuggets · ½ taza arroz de coco · ½ taza vegetales</span><span>🧑 10 nuggets · 1 taza arroz de coco · 1 taza vegetales</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d05-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Arepas con relleno de aguacate y pollo</div>
+    <div class="pors"><span>👧 1 arepa rellena pequeña</span><span>🧑 2 arepas rellenas</span></div>
+  </div>
+</div>
+
+<!-- DÍA 6 -->
+<div class="day">
+  <div class="dhdr">🟢 Jueves <span class="ddate">6 Ago</span></div>
+  <div class="meal">
+    <div class="mtitle">☀️ Desayuno <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d06-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pan de bono + Mango picado + Jugo de maracuyá</div>
+    <div class="pors"><span>👧 2 panes de bono · ½ taza mango · ½ vaso jugo</span><span>🧑 3 panes de bono · 1 taza mango · 1 vaso jugo</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍊 Media mañana <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d06-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Mandarina + Kumis + Muffin de chocolate mini</div>
+    <div class="pors"><span>👧 1 mandarina · 150 ml kumis · 1 muffin mini</span><span>🧑 2 mandarinas · 200 ml kumis · 2 muffins mini</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍱 Almuerzo</div>
+    <div class="mname" contenteditable="true" data-id="d06-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Lentejas guisadas con verduras + Puré de papa + Calabacín</div>
+    <div class="pors"><span>👧 ½ taza lentejas · ½ taza puré · ½ taza calabacín</span><span>🧑 1 taza lentejas · 1 taza puré · 1 taza calabacín</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d06-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Empanaditas al horno con ensalada de tomate</div>
+    <div class="pors"><span>👧 3 empanaditas · porción ensalada</span><span>🧑 5 empanaditas · porción ensalada</span></div>
+  </div>
+</div>
+
+<!-- DÍA 7 -->
+<div class="day">
+  <div class="dhdr">🟢 Viernes <span class="ddate">7 Ago</span></div>
+  <div class="meal">
+    <div class="mtitle">☀️ Desayuno <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d07-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pancakes con miel + Fresas + Jugo de mora</div>
+    <div class="pors"><span>👧 2 pancakes · ½ taza fresas · ½ vaso jugo</span><span>🧑 3 pancakes · 1 taza fresas · 1 vaso jugo</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍊 Media mañana <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d07-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Fresas + Yogur líquido de mora + Granola</div>
+    <div class="pors"><span>👧 ½ taza fresas · 150 ml yogur · 2 cdas granola</span><span>🧑 1 taza fresas · 200 ml yogur · 4 cdas granola</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍱 Almuerzo <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d07-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Albóndigas de pollo en salsa + Yuca frita al horno + Ensalada de remolacha</div>
+    <div class="pors"><span>👧 4 albóndigas · ½ taza yuca · porción remolacha</span><span>🧑 7 albóndigas · 1 taza yuca · porción remolacha</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d07-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pizza casera individual + Ensalada de tomate</div>
     <div class="pors"><span>👧 2 tajadas · porción ensalada</span><span>🧑 4 tajadas · porción ensalada</span></div>
   </div>
 </div>
 
-<!-- DÍA 29 -->
+<!-- DÍA 8 -->
 <div class="day">
-  <div class="dhdr">🟢 Miércoles <span class="ddate">29 Jul</span></div>
+  <div class="dhdr">🟢 Sábado <span class="ddate">8 Ago</span></div>
   <div class="meal">
-    <div class="mtitle">☀️ Desayuno</div>
-    <div class="mname" contenteditable="true" data-id="d29-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pancakes con miel + Huevo frito + Jugo de naranja</div>
-    <div class="pors"><span>👧 2 pancakes · 1 huevo · ½ vaso jugo</span><span>🧑 3 pancakes · 2 huevos · 1 vaso jugo</span></div>
+    <div class="mtitle">☀️ Desayuno <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d08-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Omelette con tortilla de trigo (wrap de huevo) + Mango + Jugo de naranja</div>
+    <div class="pors"><span>👧 1 wrap pequeño · ½ taza mango · ½ vaso jugo</span><span>🧑 1 wrap grande · 1 taza mango · 1 vaso jugo</span></div>
   </div>
   <div class="meal">
-    <div class="mtitle">🍊 Media mañana</div>
-    <div class="mname" contenteditable="true" data-id="d29-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Uvas + Kumis + Deditos de queso</div>
-    <div class="pors"><span>👧 ½ taza uvas · 150 ml kumis · 3 deditos</span><span>🧑 1 taza uvas · 200 ml kumis · 5 deditos</span></div>
+    <div class="mtitle">🍊 Media mañana <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d08-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Mango picado + Leche achocolatada + Galletas de avena con chispas de chocolate casera</div>
+    <div class="pors"><span>👧 ½ taza mango · 150 ml leche choco · 2 galletas</span><span>🧑 1 taza mango · 200 ml leche choco · 4 galletas</span></div>
   </div>
   <div class="meal">
     <div class="mtitle">🍱 Almuerzo <span class="nbadge">N</span></div>
-    <div class="mname" contenteditable="true" data-id="d29-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pechuga de pollo al horno + Puré de papa + Brócoli</div>
-    <div class="pors"><span>👧 80 g pollo · ½ taza puré · ½ taza brócoli</span><span>🧑 160 g pollo · 1 taza puré · 1 taza brócoli</span></div>
-  </div>
-  <div class="meal">
-    <div class="mtitle">🌙 Cena</div>
-    <div class="mname" contenteditable="true" data-id="d29-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Sopa de lentejas ligera + Arepa pequeña</div>
-    <div class="pors"><span>👧 1 plato pequeño · ½ arepa</span><span>🧑 1 plato grande · 1 arepa</span></div>
-  </div>
-</div>
-
-<!-- DÍA 30 -->
-<div class="day">
-  <div class="dhdr">🟢 Jueves <span class="ddate">30 Jul</span></div>
-  <div class="meal">
-    <div class="mtitle">☀️ Desayuno</div>
-    <div class="mname" contenteditable="true" data-id="d30-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Huevos pericos + Arepa de maíz + Jugo de maracuyá</div>
-    <div class="pors"><span>👧 1 arepa · 1 huevo · ½ vaso jugo</span><span>🧑 2 arepas · 2 huevos · 1 vaso jugo</span></div>
-  </div>
-  <div class="meal">
-    <div class="mtitle">🍊 Media mañana</div>
-    <div class="mname" contenteditable="true" data-id="d30-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Piña + Leche entera + Galletas integrales</div>
-    <div class="pors"><span>👧 ½ taza piña · 150 ml leche · 3 galletas</span><span>🧑 1 taza piña · 200 ml leche · 5 galletas</span></div>
-  </div>
-  <div class="meal">
-    <div class="mtitle">🍱 Almuerzo <span class="nbadge">N</span></div>
-    <div class="mname" contenteditable="true" data-id="d30-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Mojarra frita + Arroz de coco + Habichuela y zanahoria</div>
-    <div class="pors"><span>👧 80 g mojarra · ½ taza arroz de coco · ½ taza vegetales</span><span>🧑 150 g mojarra · 1 taza arroz de coco · 1 taza vegetales</span></div>
+    <div class="mname" contenteditable="true" data-id="d08-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pollo a la naranja + Puré de papa + Brócoli</div>
+    <div class="pors"><span>👧 80 g pollo · ½ taza puré · ½ taza brócoli</span><span>🧑 150 g pollo · 1 taza puré · 1 taza brócoli</span></div>
   </div>
   <div class="meal">
     <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
-    <div class="mname" contenteditable="true" data-id="d30-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Hamburguesa de pollo casera + Papa a la francesa + Aguacate</div>
-    <div class="pors"><span>👧 1 hamburguesa pequeña · porción papas · ¼ aguacate</span><span>🧑 1 hamburguesa grande · porción papas · ½ aguacate</span></div>
+    <div class="mname" contenteditable="true" data-id="d08-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Crema de zuchini con pan tostado</div>
+    <div class="pors"><span>👧 1 plato pequeño · 1 tostada</span><span>🧑 1 plato grande · 2 tostadas</span></div>
   </div>
 </div>
 
-<!-- DÍA 31 -->
+<!-- DÍA 9 -->
 <div class="day">
-  <div class="dhdr">🟢 Viernes <span class="ddate">31 Jul</span></div>
+  <div class="dhdr">🔵 Domingo <span class="ddate">9 Ago</span></div>
   <div class="meal">
-    <div class="mtitle">☀️ Desayuno</div>
-    <div class="mname" contenteditable="true" data-id="d31-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Tostadas con aguacate y huevo + Jugo de papaya</div>
-    <div class="pors"><span>👧 2 tostadas · ¼ aguacate · 1 huevo</span><span>🧑 3 tostadas · ½ aguacate · 2 huevos</span></div>
+    <div class="mtitle">☀️ Desayuno <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d09-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Arepa de yuca con queso + Huevo + Jugo de papaya</div>
+    <div class="pors"><span>👧 1 arepa de yuca · 1 huevo · ½ vaso jugo</span><span>🧑 2 arepas de yuca · 2 huevos · 1 vaso jugo</span></div>
   </div>
   <div class="meal">
-    <div class="mtitle">🍊 Media mañana</div>
-    <div class="mname" contenteditable="true" data-id="d31-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Banano + Yogur líquido + Sándwich pequeño de jamón y queso</div>
-    <div class="pors"><span>👧 1 banano · 150 ml yogur líquido · ½ sándwich</span><span>🧑 1 banano · 200 ml yogur líquido · 1 sándwich</span></div>
+    <div class="mtitle">🍊 Media mañana <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d09-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Papaya + Kumis + Cerditos hawaianos (mini sándwiches dulces)</div>
+    <div class="pors"><span>👧 ½ taza papaya · 150 ml kumis · 2 cerditos</span><span>🧑 1 taza papaya · 200 ml kumis · 3 cerditos</span></div>
   </div>
   <div class="meal">
     <div class="mtitle">🍱 Almuerzo</div>
-    <div class="mname" contenteditable="true" data-id="d31-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Pollo desmechado en salsa BBQ casera + Arroz blanco + Arveja y zanahoria</div>
-    <div class="pors"><span>👧 80 g pollo · ½ taza arroz · ½ taza vegetales</span><span>🧑 160 g pollo · 1 taza arroz · 1 taza vegetales</span></div>
+    <div class="mname" contenteditable="true" data-id="d09-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Lomo de cerdo al horno + Papitas criollas fritas + Arveja</div>
+    <div class="pors"><span>👧 70 g lomo · porción papitas · ½ taza arveja</span><span>🧑 140 g lomo · porción papitas · 1 taza arveja</span></div>
   </div>
   <div class="meal">
-    <div class="mtitle">🌙 Cena</div>
-    <div class="mname" contenteditable="true" data-id="d31-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Wraps de pollo desmechado con vegetales + Queso</div>
-    <div class="pors"><span>👧 1 tortilla · 30 g pollo</span><span>🧑 2 tortillas · 60 g pollo</span></div>
+    <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d09-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Hamburguesa casera pequeña con papas francesas</div>
+    <div class="pors"><span>👧 1 hamburguesa pequeña · porción papas</span><span>🧑 1 hamburguesa grande · porción papas</span></div>
+  </div>
+</div>
+
+<!-- DÍA 10 -->
+<div class="day">
+  <div class="dhdr">🟢 Lunes <span class="ddate">10 Ago</span></div>
+  <div class="meal">
+    <div class="mtitle">☀️ Desayuno <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d10-des" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Arepa de chócolo + Huevo frito + Jugo de mandarina</div>
+    <div class="pors"><span>👧 1 arepa · 1 huevo · ½ vaso jugo</span><span>🧑 2 arepas · 2 huevos · 1 vaso jugo</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍊 Media mañana <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d10-lon" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Melón + Yogur líquido natural + Torta veteada (porción pequeña)</div>
+    <div class="pors"><span>👧 ½ taza melón · 150 ml yogur · 1 tajada torta</span><span>🧑 1 taza melón · 200 ml yogur · 2 tajadas torta</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🍱 Almuerzo <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d10-alm" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Arroz de pollo + Habichuelas en crema de leche y queso parmesano</div>
+    <div class="pors"><span>👧 ¾ taza arroz de pollo · ½ taza habichuelas</span><span>🧑 1¼ taza arroz de pollo · 1 taza habichuelas</span></div>
+  </div>
+  <div class="meal">
+    <div class="mtitle">🌙 Cena <span class="nbadge">N</span></div>
+    <div class="mname" contenteditable="true" data-id="d10-cen" onblur="saveMeal(this)" onkeydown="blurOnEnter(event)">Torta de plátano con queso + Huevo cocido</div>
+    <div class="pors"><span>👧 1 tajada torta · 1 huevo</span><span>🧑 2 tajadas torta · 1 huevo</span></div>
   </div>
 </div>
 
@@ -309,92 +380,111 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#f3f4f6;color:#1f293
 <!-- VERDULERÍA -->
 <div class="cblk" id="cb-v">
   <div class="chdr">🥬 Verdulería — Zapatoca</div>
-  <div class="si" data-s="Z" data-c="v" data-id="i0"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Papaya</div><div class="ipres">2 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i1"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Plátano maduro</div><div class="ipres">4 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i2"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Papa criolla</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i3"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Habichuela</div><div class="ipres">800 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i4"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Fresas</div><div class="ipres">300 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i5"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Mandarina</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr">$8.000</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i6"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Yuca</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i7"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Arveja</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i8"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pera</div><div class="ipres">4 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i9"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Zanahoria</div><div class="ipres">1.2 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i10"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Remolacha</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i11"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Naranja</div><div class="ipres">1.5 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i12"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Uvas</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i13"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Papa sabanera (para puré)</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i14"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Brócoli</div><div class="ipres">1 cabeza</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i15"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Maracuyá</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i16"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Piña</div><div class="ipres">1 pequeña</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i17"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Aguacate</div><div class="ipres">4 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i18"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Banano</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr">$3.600</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i19"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Cebolla cabezona</div><div class="ipres">2 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i20"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Cebolla larga</div><div class="ipres">1 atado</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i21"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Ajo</div><div class="ipres">3 cabezas</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr">$1.200</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i22"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Cilantro</div><div class="ipres">1 atado</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i23"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Tomate</div><div class="ipres">4 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="v" data-id="i24"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Coco (rallado o leche de coco)</div><div class="ipres">1 unidad</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i0"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Banano</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr">$3.600</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i1"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Manzana</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr">$7.900</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i2"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Mandarina</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr">$8.000</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i3"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pera</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i4"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Uvas</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i5"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Papaya</div><div class="ipres">2 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i6"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Naranjas</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i7"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Tomate</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i8"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Cebolla cabezona blanca</div><div class="ipres">3 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i9"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Cebolla larga</div><div class="ipres">1 atado</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i10"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Ajo</div><div class="ipres">3 cabezas</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr">$1.200</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i11"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Brócoli</div><div class="ipres">2 cabezas</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i12"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Zanahoria</div><div class="ipres">1.2 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i13"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Habichuela</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i14"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Aguacate</div><div class="ipres">4 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i15"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Papa criolla</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i16"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Papa sabanera</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i17"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Plátano maduro</div><div class="ipres">4 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i18"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Yuca</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i19"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Arveja</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i20"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Cilantro</div><div class="ipres">1 atado</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i21"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Zucchini</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i22"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Limón</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i23"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Mango</div><div class="ipres">3 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i24"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Melón</div><div class="ipres">1 unidad</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i25"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Fresas</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i26"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Maracuyá</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i27"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Mora</div><div class="ipres">300 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i28"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Champiñones</div><div class="ipres">200 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i29"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Espinaca</div><div class="ipres">200 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="v" data-id="i30"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Remolacha</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
 </div>
 
 <!-- CARNICERÍA -->
 <div class="cblk" id="cb-c">
   <div class="chdr">🥩 Carnicería — Zapatoca</div>
-  <div class="si" data-s="Z" data-c="c" data-id="i25"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Chuleta de cerdo</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="c" data-id="i26"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Carne de res molida</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="c" data-id="i27"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pechuga de pollo</div><div class="ipres">2 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="c" data-id="i28"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pollo molido (para albóndigas)</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="c" data-id="i29"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Chorizo</div><div class="ipres">300 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="c" data-id="i30"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Mojarra</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="c" data-id="i31"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pechuga de pollo</div><div class="ipres">2 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="c" data-id="i32"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Muslos de pollo</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="c" data-id="i33"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Carne de res molida</div><div class="ipres">700 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="c" data-id="i34"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Lomo de cerdo</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
 </div>
 
 <!-- LÁCTEOS -->
 <div class="cblk" id="cb-l">
   <div class="chdr">🥛 Lácteos — Zapatoca</div>
-  <div class="si" data-s="Z" data-c="l" data-id="i31"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Leche entera</div><div class="ipres">3 L</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="l" data-id="i32"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Huevos</div><div class="ipres">24 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="l" data-id="i33"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Queso doble crema</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr">$10.500</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="l" data-id="i34"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Queso mozzarella (para pizza)</div><div class="ipres">300 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="l" data-id="i35"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Mantequilla</div><div class="ipres">125 g × 2</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr">$2.800</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="l" data-id="i35"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Leche entera</div><div class="ipres">2 L</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="l" data-id="i36"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Huevos</div><div class="ipres">30 unidades</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
 </div>
 
 <!-- NEVERAS -->
 <div class="cblk" id="cb-n">
   <div class="chdr">❄️ Neveras — D1 / Ara</div>
-  <div class="si" data-s="D" data-c="n" data-id="i36"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Kumis</div><div class="ipres">1 L</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i37"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Yogur líquido (bebible)</div><div class="ipres">1 L</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i38"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Leche achocolatada (Milo líquido)</div><div class="ipres">1 L</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i39"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pan de queso pequeño</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i40"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pandebono</div><div class="ipres">8 un</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$6.990</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i41"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Granola</div><div class="ipres">1 paquete</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i42"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Croissant pequeño</div><div class="ipres">2 unidades</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i43"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Arepa de chócolo</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$3.250</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i44"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Base para pizza precocida</div><div class="ipres">1 unidad</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i45"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Galletas de arroz</div><div class="ipres">1 paquete</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i46"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Deditos de queso</div><div class="ipres">10 un</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$7.490</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i47"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Arepa de maíz con queso</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$3.250</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i48"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Galletas integrales</div><div class="ipres">1 paquete</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i49"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Papa a la francesa (congelada)</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$4.950</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i50"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pan de hamburguesa</div><div class="ipres">4 un</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i51"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pan tajado integral</div><div class="ipres">1 paquete</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i52"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pan para sándwich</div><div class="ipres">1 paquete pequeño</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="n" data-id="i53"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Jamón de pavo en lonchas</div><div class="ipres">225 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$11.500</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i37"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Kumis</div><div class="ipres">1 L</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$6.750</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i38"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Queso campesino</div><div class="ipres">350 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$8.990</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i39"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Queso Mozarella</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$10.500</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i40"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Mantequilla</div><div class="ipres">125 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$1.400</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i41"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Crema de leche</div><div class="ipres">200 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$2.400</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i42"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Queso parmesano rallado</div><div class="ipres">100 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$7.550</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i43"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Tocineta</div><div class="ipres">150 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$6.900</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i44"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Arepa de maíz blanca con queso</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$3.250</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i45"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Arepa de chócolo</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$3.250</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i46"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Arepa de yuca</div><div class="ipres">240 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$4.350</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i47"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pan de yuca / pandebono</div><div class="ipres">8 unidades</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$6.990</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i48"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Empanadas bandeja carne</div><div class="ipres">12 unidades</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$9.850</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i49"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Papa francesa</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$4.950</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i50"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Yuca frita</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$4.490</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i51"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Tortillas grandes</div><div class="ipres">8 unidades</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$7.250</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i52"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Yogur líquido de fresa</div><div class="ipres">1 L</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i53"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Yogur líquido de mora</div><div class="ipres">1 L</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i54"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Yogur líquido natural</div><div class="ipres">1 L</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i55"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Leche achocolatada líquida</div><div class="ipres">1 L</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i56"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Croissant mini</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i57"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pan de banano</div><div class="ipres">1 unidad</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i58"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Muffins de chocolate</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i59"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Torta veteada</div><div class="ipres">1 porción</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i60"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Cerditos hawaianos (mini sándwiches dulces)</div><div class="ipres">6 unidades</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="n" data-id="i61"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Nuggets de pollo (bandeja congelada)</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
 </div>
 
 <!-- ABARROTES -->
 <div class="cblk" id="cb-a">
   <div class="chdr">🥫 Abarrotes</div>
-  <div class="si" data-s="Z" data-c="a" data-id="i54"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Milo / chocolate en polvo</div><div class="ipres">1 unidad</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="a" data-id="i55"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Lentejas</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="Z" data-c="a" data-id="i56"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Arroz blanco</div><div class="ipres">1.5 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="a" data-id="i57"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Harina de trigo</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$1.700</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="a" data-id="i58"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Miel de abejas</div><div class="ipres">350 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$8.900</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="a" data-id="i59"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Aceite de girasol</div><div class="ipres">900 ml</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$8.850</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="a" data-id="i60"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Sal</div><div class="ipres">1000 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$2.900</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="a" data-id="i61"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pasta corta</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="a" data-id="i62"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Salsa de tomate</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="a" data-id="i63"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Salsa BBQ</div><div class="ipres">1 botella</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="a" data-id="i64"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Tortillas pequeñas</div><div class="ipres">12 un</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$5.350</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
-  <div class="si" data-s="D" data-c="a" data-id="i65"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Caldo de pollo</div><div class="ipres">84 g × 2</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$3.800</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i62"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Chocolate de mesa sin azúcar</div><div class="ipres">250 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$11.950</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="a" data-id="i63"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Milo</div><div class="ipres">1 unidad</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="a" data-id="i64"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Arroz blanco</div><div class="ipres">1.5 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="a" data-id="i65"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Lentejas</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i66"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pasta penne</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$3.990</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i67"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Salsa Pesto</div><div class="ipres">190 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$7.990</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="a" data-id="i68"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pan tajado</div><div class="ipres">1 paquete</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i69"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Salsa de tomate</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$4.490</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i70"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Mayonesa</div><div class="ipres">400 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$5.650</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i71"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Mostaza</div><div class="ipres">200 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$2.550</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i72"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Miel de abejas</div><div class="ipres">350 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$8.900</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i73"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Aceite de girasol</div><div class="ipres">900 ml</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$8.850</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i74"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Sal</div><div class="ipres">1000 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$2.900</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i75"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Pimienta</div><div class="ipres">28 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$1.900</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i76"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Caldo de pollo</div><div class="ipres">84 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$1.900</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="a" data-id="i77"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Azúcar</div><div class="ipres">1 kg</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i78"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Harina de trigo</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr">$1.700</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="a" data-id="i79"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Avena en hojuelas</div><div class="ipres">500 g</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i80"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Granola</div><div class="ipres">1 paquete</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i81"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Galletas de arroz</div><div class="ipres">1 paquete</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i82"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Rollitos de canela (masa refrigerada)</div><div class="ipres">1 tubo</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="D" data-c="a" data-id="i83"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Chips de chocolate (para galletas de avena)</div><div class="ipres">200 g</div></div><div class="ir"><span class="bdg bd">D1/Ara</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
+  <div class="si" data-s="Z" data-c="a" data-id="i84"><div class="ck" onclick="tog(this)"></div><div class="ii"><div class="iname">Canela en polvo</div><div class="ipres">1 unidad</div></div><div class="ir"><span class="bdg bz">Zapatoca</span><span class="pr s">sin precio – actualizar (no está en el catálogo)</span></div><button class="del-btn" onclick="delItem(this)">×</button></div>
 </div>
 
 <!-- EXTRAS / ASEO (dinámico) -->
@@ -411,22 +501,18 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#f3f4f6;color:#1f293
 <!-- ════ PRESUPUESTO ════ -->
 <div class="sec" id="s-presupuesto">
 <div class="bgrid">
-  <div class="bc"><div class="bclbl">🟣 Zapatoca</div><div class="bcamt" style="color:#6c63ff">$26.100</div><div class="bcnt">Solo ítems con precio registrado</div></div>
-  <div class="bc"><div class="bclbl">🟠 D1 / Ara</div><div class="bcamt" style="color:#e76f51">$68.930</div><div class="bcnt">12 productos con precio</div></div>
-  <div class="bc tot"><div class="bclbl">💰 Total estimado</div><div class="bcamt">$95.030</div><div class="bcnt">Solo ítems con precio · faltan la mayoría de frutas, verduras, carnes, huevos y granos en Zapatoca</div></div>
+  <div class="bc"><div class="bclbl">🟣 Zapatoca</div><div class="bcamt" style="color:#6c63ff">$20.700</div><div class="bcnt">4 productos con precio</div></div>
+  <div class="bc"><div class="bclbl">🟠 D1 / Ara</div><div class="bcamt" style="color:#e76f51">$151.640</div><div class="bcnt">27 productos con precio</div></div>
+  <div class="bc tot"><div class="bclbl">💰 Total estimado</div><div class="bcamt">$172.340</div><div class="bcnt">Solo ítems con precio registrado en el catálogo de Notion</div></div>
 </div>
 <div style="background:#fff;border-radius:12px;padding:14px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
   <div style="font-weight:800;color:#1b5e3b;margin-bottom:10px;font-size:.85rem;">📊 Distribución del gasto</div>
-  <div class="barrow"><div class="barlbl"><span>D1/Ara</span><span>$68.930 (73%)</span></div><div class="bartr"><div class="barf" style="width:73%;background:#e76f51"></div></div></div>
-  <div class="barrow"><div class="barlbl"><span>Zapatoca</span><span>$26.100 (27%)</span></div><div class="bartr"><div class="barf" style="width:27%;background:#6c63ff"></div></div></div>
+  <div class="barrow"><div class="barlbl"><span>D1/Ara</span><span>$151.640 (88%)</span></div><div class="bartr"><div class="barf" style="width:88%;background:#e76f51"></div></div></div>
+  <div class="barrow"><div class="barlbl"><span>Zapatoca</span><span>$20.700 (12%)</span></div><div class="bartr"><div class="barf" style="width:12%;background:#6c63ff"></div></div></div>
 </div>
 <div class="wbox" style="background:#eff6ff;border-color:#3b82f6;">
-  <div class="wtit" style="color:#1d4ed8;">ℹ️ Notion no disponible en esta ejecución</div>
-  <div class="wtxt">El conector de Notion sigue sin estar conectado, así que no fue posible refrescar la tabla "Opciones de comida" ni el catálogo de precios en vivo. Los precios reutilizan los de la semana anterior solo cuando el producto y la presentación coinciden exactamente; el resto quedó marcado "sin precio – actualizar". Conecta Notion y vuelve a pedir la actualización para refrescar precios e ideas.</div>
-</div>
-<div class="wbox">
-  <div class="wtit">⚠️ Pendiente de actualizar precios</div>
-  <div class="wtxt">Papaya · Plátano maduro · Papa criolla · Habichuela · Fresas · Yuca · Arveja · Pera · Zanahoria · Remolacha · Naranja · Uvas · Papa sabanera · Brócoli · Maracuyá · Piña · Aguacate · Cebollas · Cilantro · Tomate · Coco · Todas las carnes y pescado · Leche entera · Huevos · Queso mozzarella · Kumis · Yogur líquido · Leche achocolatada · Pan de queso pequeño · Granola · Croissant · Base para pizza · Galletas (arroz e integrales) · Pan de hamburguesa · Pan tajado integral · Pan para sándwich · Milo · Lentejas · Arroz blanco · Pasta · Salsa de tomate · Salsa BBQ</div>
+  <div class="wtit" style="color:#1d4ed8;">✅ Notion conectado</div>
+  <div class="wtxt">Este menú se generó con la tabla "Opciones de comida" de Notion (69 ideas, se usaron ~30) y los precios del catálogo "🛒 Precios de Productos — Catálogo Completo". De los 85 productos de la lista, 31 tienen precio registrado (principalmente en D1/Ara: quesos, lácteos, arepas, salsas, aceite y condimentos). Los 54 restantes están marcados "sin precio – actualizar": algunos porque en el catálogo de Zapatoca (frutas, verduras y carnes) aún no tienen precio cargado, y otros porque no existen en el catálogo (mango, melón, fresas, maracuyá, mora, champiñones, espinaca, yogures líquidos bebibles, leche achocolatada, y varios productos horneados caseros como pan de banano, muffins, torta veteada y rollitos de canela).</div>
 </div>
 </div><!-- /s-presupuesto -->
 
@@ -469,7 +555,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#f3f4f6;color:#1f293
 </nav>
 
 <script>
-var KEY='mf_26jul_31jul_v1';
+var KEY='mf_02ago_10ago_v2';
 var st={checks:{},deleted:[],custom:[],meals:{}};
 function load(){try{var d=JSON.parse(localStorage.getItem(KEY));if(d)st=Object.assign(st,d);}catch(e){}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
